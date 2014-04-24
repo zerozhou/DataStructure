@@ -1,0 +1,170 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+%\documentclass[12pt,a4paper,SimSun]{moderncv} 
+\documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+%\usepackage{CJKutf8}
+\usepackage{xeCJK}
+%\usepackage{CJK}
+%\setCJKmainfont{Microsoft YaHei}    %雅黑字体包, OK
+\setCJKmainfont{SimSun} %OK
+%\setCJKmainfont{AR PL UKai CN}      %libreOffice字体包 OK
+
+% 调整页面出血
+\usepackage[scale=0.82]{geometry}
+\setlength{\hintscolumnwidth}{3.1cm}           % 如果你希望改变日期栏的宽度
+
+
+%调整行间距
+\renewcommand{\baselinestretch}{1.15}
+
+% 个人信息
+\firstname{周}
+\familyname{子健}
+%\title{伟大都是熬出来的}                      % 可选项、如不需要可删除本行
+\address{中国科学技术大学 西区}{230027~ 合肥 ~安徽}             % 可选项、如不需要可删除本行
+\mobile{(+86)13739258780}                         % 可选项、如不需要可删除本行
+\email{zjzhou62@mail.ustc.edu.cn}                    % 可选项、如不需要可删除本行
+%\homepage{home.ustc.edu.cn/\textasciitilde zjzhou62}                  % 可选项、如不需要可删除本行 \textasciitilde 
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\photo[53pt][0pt]{SA12010062.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+\quote{求职意向:~~\textbf{软件开发-后台开发方向}}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{verbatim}
+%\begin{CJK}{UTF8}{SimSun}                       % 详情参阅CJK文件包
+%\begin{xeCJK}{UTF8}{SimSun}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{教育背景}
+\cventry{2012.09--至今}{中国科学技术大学}{自动化系}{控制理论与控制工程专业}{工学\textbf{硕士}}
+{ \textbf{主修课程:} 随机过程理论， 矩阵代数， 离散数学， 高级计算机网络， 工程信息论， 算法设计与分析\\
+ \textbf{自修课程:}  信息检索导论， 抽象代数， 操作系统， 网络编程， Linux程序设计（第4版）（英文版）， C程序设计语言（第二版）（英文版）} % 第3 到第6 编码可留白
+%\cventry{2007.09--2011.07}{合肥学院}{自动化系}{工学学士}{安徽~合肥}{}
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{职业技能}
+\cvline{计算机技术}{$\bullet$ 熟练掌握C语言; 基本掌握C++; 能够写简单的shell和python脚本; 了解JavaScript, Nodejs}
+\cvline{}{$\bullet$ 掌握常用的数据结构和算法。}
+\cvline{}{$\bullet$ 使用Ubuntu12.04作为日常操作系统; 能够使用gdb进行程序调试; 对于多文件编译， 可以写出相应的Makefile文件。}
+\cvline{}{$\bullet$ 基本掌握操作系统的基本原理， 像文件操作， 内存管理， 进程通信等。}
+\cvline{}{$\bullet$ 熟悉计算机网络基础知识， 像TCP/IP协议， 网络编程等。}
+\cvline{}{$\bullet$ 能够使用\LaTeX{}进行日常的文档编辑}
+%\cvline{}{$\bullet$ .}
+%\cvline{}{$\bullet$ 了解大数据处理和分布式系统的基本原理;~了解Hadoop框架和Lucene相关技术;~了解推荐系统基本原理和数据挖掘技术.}
+\cvline{英语水平}{$\bullet$ 良好的英文读写能力}
+
+\section{项目经验}
+%\cventry{2012.08 -- 2012.09}{为本校基础与后勤管理部完成的工程项目查询管理系统}{\textbf{项目内容:~}主要完成的功能有界面设计，数据库维护，基本的查询管理功能}
+
+\cventry{2012.7 -- 2012.08}{工程项目查询管理系统}{}{}{}{
+\textbf{项目内容:~}该项目为本校基础与后勤管理部委托我的导师做的小项目， 主要涉及操作界面设计， 数据库维护， 基本的查询管理功能。\newline{}%
+\textbf{开发环境:~} Visual C++ 6.0\newline{}
+\textbf{项目职责:}
+\begin{itemize}%
+\item 独立完成该项目， 咨询后勤部的软件需求， 按照需求整理成文档; 为查询管理系统软件进行前期的一些调研， 并将功能模块的划分为子模块; 最后逐个开发各个子模块。
+\item 使用\LaTeX{}编写软件使用说明书， 负责软件开发文档的撰写和管理维护。
+\item 负责用户数据文件的输入输出以及后期的维护工作。
+%  \begin{itemize}%
+%  \item 二级内容 (a);
+%  \end{itemize}
+\end{itemize}
+}
+%{2013.09 -- 2013.10}
+\cventry{2013.9 -- 2013.10}{\textbf{多功能家庭语音竟答系统}}{}{}{}{
+\textbf{\underline{项目内容:}}~该系统是参加科大讯飞举办的“语音之美”比赛的参赛作品， 主要功能有手动导入语料库， 语音合成和语音识别。\newline{}%
+\textbf{\underline{开发平台:~}} Ubuntu12.04  + Qt5.1.1\newline{}
+\textbf{\underline{项目特色:~}}
+\begin{itemize}%
+\item 手动导入语料库。 包括竟答题库和为了烘托答题气氛的背景音乐。
+\item 使用不同的用户人群。 语料库的决定权在用户手中， 所以可以满足不同人的需求。
+\item 软件具有可扩展性。 完全可以拓展为满足不同人群的英语学习软件。用户可以将平时拿不准的单词装入语料库， 反复背诵直至掌握为止。
+%  \begin{itemize}%
+%  \item 二级内容 (a);
+%  \end{itemize}
+\end{itemize}
+ \textbf{\underline{完成情况:}} 实现了手动导入语料库和语音合成功能。\newline{}
+ \textbf{\underline{获奖情况:}} 获得创意奖及200元的奖金。
+}
+\cventry{2013.9 -- 2015.07}{命名数据网络研究与应用}{}{}{}{
+ \textbf{\underline{项目内容:}}~命名数据网路(NDN)是美国支持的未来网络中的一个子项目， 它旨在有朝一日替换现存的IP网络。 未来网络是一个全新的研究课题， 我目前主要负责研究内容源移动带来的问题及解决方案， 以及跑在NDN上的视频会议系统的开发。\newline{}%
+ \textbf{\underline{开发平台:~}} Ubuntu12.04 + Vim + ctags \newline{}
+%\textbf{开发平台:~} Ubuntu12.04 + Vim  \newline{}
+ \textbf{\underline{项目进度:~}} 目前， 利用Githup上的NDNVideo源码， 已经搭建由六个节点组成的网络系统。 能够实现源节点播视频， 其他节点同步接受。 我的主要工作是解决网络中节点移动带来的一系列问题。 我的解决方案是将系统设计成一个集中式的网络系统架构。
+}
+\section{获奖情况}
+%\cventry{本科期间}{
+%\begin{itemize}%
+\cvitemwithcomment{2013年}{院优秀班主任助管}{}
+\cvitemwithcomment{2010年}{院优秀毕业生}{}
+\cvitemwithcomment{2009年}{国家励志奖学金}{\textbf{一次}}
+\cvitemwithcomment{2008年}{学习优秀奖学金}{\textbf{三等奖}}
+\cvitemwithcomment{2007年}{学习优秀奖学金}{\textbf{二等奖}}
+\cvitemwithcomment{本科期间}{三好学生}{\textbf{多次}}
+\cvitemwithcomment{本科期间}{优秀学生干部}{\textbf{多次}}
+%\end{itemize}}
+
+\section{社团活动}
+\cvline{2008年}{\textbf{合肥庐阳区安庆路街道志愿者}， 作为志愿者组织并参与了街道老年人运动会，街道残疾人关爱行动--合肥一日游。}
+
+\cvline{2013年}{\textbf{信息学院13级本科二班的班主任助管}， 作为老师的助手和本科新生的大哥大， 通过分担老师的做班任务和指导本科班级班委会处理日常工作， 班主任助管工作不但教会了我如何跟院里各个领导打交道， 而且提供了一个将我本科期间的班级工作经验跟大一本科生一同分享的机会。}
+\cvline{2009--2014年}{\textbf{系里举办的篮球联赛}， 作为班级篮球队的一名主力队员， 通过比赛既提高了身体素质， 又懂得了团队合作的重要性， 结交了一群无话不谈的好朋友。}
+
+%\section{个人兴趣}
+%\cvitem{\textbf{阅读}}{\small 阅读丰富内心}
+%\cvitem{\textbf{音乐}}{\small 琴弦共鸣心弦}
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+\section{个人兴趣及自我评价}
+\cvline{}{$\bullet$ 遇到问题喜欢刨根究底， 很享受经过一番调查研究将问题理解清楚的那种柳暗花明又一村的感觉。}
+\cvline{}{$\bullet$ 具备良好的逻辑思维能力和比较扎实的理论基本功， 学习能力较强。}
+\cvline{}{$\bullet$ 具备良好的团队合作精神和沟通能力， 对待工作严谨负责。}
+\cvline{}{$\bullet$ 性格积极乐观， 勇于接受新的挑战和尝试新的东西， 吃苦耐劳。}
+\cvline{}{$\bullet$ 喜欢打篮球， 喜爱运动。}
+%\cvline{}{$\bullet$ ,~.}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+{已收录论文:}{Zhou~Zijian, Tan~Xiaobin, Li~Hebi, \textit{MobiNDN}: A Mobility Support Architecture for NDN. in\emph{CCC}, 2014}
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+%\clearpage\end{CJK}
+%\clearpage\end{xeCJK}
+%\end{verbatim}
+\end{document}
+
+%% 文件结尾 `template-zh.tex'.
