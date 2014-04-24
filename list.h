@@ -4,7 +4,7 @@ struct LNode {
 };
 
 /*construct a null LinkList*/
-void ListCreate(struct LNode *pLinkList, int count);
+void InitList(struct LNode *pLinkList);
 
 /*destroy link list*/
 void DestroyList (struct LNode *pLinkList);

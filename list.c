@@ -1,17 +1,23 @@
-struct LNode *pLinkList = NULL;
+#include "list.h"
 
-void ListCreate (struct LNode *pLinkList, int )
+struct LNode *pListHead = NULL;
+
+void InitList (struct LNode *pListHead)
 {
-    pLinkList = (struct LNode *)malloc(sizeof(struct LNode));
-    if(pLinkList == NULL)
+    pListHead = (struct LNode *)malloc(sizeof(struct LNode));
+    if(NULL == pListHead)
     {
         printf ("Initialization failed!\n");
         return;
     }
-    pLinkList->data = 0;
-    pLinkList->next = NULL;
+    pListHead->data = 0;
+    pListHead->next = NULL;
     
     return;
 }
 
-
+void DestroyList(struct LNode *pListHead)
+{
+    pListHead->next = NULL;
+    return;
+}
